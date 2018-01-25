@@ -1,0 +1,152 @@
+
+*{
+  margin: 0px;
+  padding: 0px;
+  font-size: 100%;
+  outline: none;
+  font-weight: 300;
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+}
+body, html{
+  height: 100%;
+}
+header{
+  height: 100%;
+}
+video#bgvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url("../img/header_01.png") no-repeat;
+    background-size: cover;
+}
+body{
+  height: 100%;
+  background-color: #EBEBEB;
+  font-size: .8em;
+  line-height: 150%;
+}
+html{
+  height: 100%;
+}
+p{
+  margin-bottom: .8em;
+}
+h2 {
+  font-size: 1.313em;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+h3{
+  margin-bottom: .8em;
+}
+.assinatura img{
+  margin: auto;
+  display: block;
+  padding-top: calc(25% - 102px);
+}
+.wrapper{
+  width: 100%;
+  background-color: #EBEBEB;
+}
+.secao{
+  --background-color: #EBEBEB;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 60px;
+  --border: 1px solid red;
+  }
+.nome_de_secao{
+  --border: 1px solid green;
+}
+.conteudo_de_secao{
+  --border: 1px solid blue;
+}
+.conteudo_de_secao a{
+  color: black;
+  font-weight: 700;
+  text-decoration: underline;
+}
+.ano{
+  font-weight: 700;
+  margin-top: 3em;
+}
+
+.ano:nth-child(1){
+  font-weight: 700;
+  margin-top: 0;
+}
+footer {
+  --background-color: #40415D;
+  clear: both;
+  width: 100%;
+  margin-bottom: 100px;
+}
+nav{
+  text-decoration: none;
+  --border: 1px solid blue;
+}
+.social-icons{
+    font-size: 1.5em;
+}
+
+@media screen and (min-width: 960px) {
+  .secao{
+    width: 960px;
+    margin: auto;
+    display: table;
+    padding-top: 42px;
+    }
+  .nome_de_secao{
+    float: left;
+    margin-left: 150px;
+    width: 200px;
+    padding: 2%;
+  }
+  .conteudo_de_secao{
+    float: right;
+    margin-right: 150px;
+    width: 450px;
+    padding: 2%;
+  }
+  nav{
+    background: rgba(255, 255, 255, .70);
+    position: fixed;
+    width: 660;
+    height: 42px;
+    padding: 14px;
+    margin-left: calc(50% - 330px);
+  }
+  /*li{
+    display: inline;
+    margin-right: 40px;
+  }*/
+  nav div ul {
+  display: table;
+  width: 100%;
+  list-style: none;
+  }
+  nav div ul li {
+  display: table-cell;
+  text-align: center;
+  margin: 20px;
+  }
+  nav div ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  display: block;
+  margin-left: 25px;
+  margin-right: 25px;
+  }
+}
