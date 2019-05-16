@@ -1,188 +1,175 @@
-<!DOCTYPE HTML>
-<html lang="pt-br">
-<head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Leonardo Lima - Designer Multimídia</title>
-  <meta name="description" content="Designer multmídia. Doutorando em Artes Visuais pela ECA/USP" />
-  <meta name="keywords" content="design multimídia, animação de vinhetas, editor de videografia, game designer" />
-  <meta name="robots" content="index, follow" />
-  <link href="css/style.css" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link href='https://fonts.googleapis.com/css?family=Work+Sans' rel='stylesheet' type='text/css'>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script>
-  $(function() {
-    $('a[href*="#"]:not([href="#"])').click(function() {
-      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-        if (target.length) {
-          $('html, body').animate({
-            scrollTop: target.offset().top
-          }, 1000);
-          return false;
-        }
-      }
-    });
-  });
-  </script>
-</head>
-<body>
-  <header>
-    <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
-      <source src="img/video3.mp4" type="video/mp4">
-      </video>
-      <nav>
-        <div>
-          <ul>
-            <li><a href="#apresentacao">sobre</a></li>
-            <li><a href="#audio-visual">produção</a></li>
-            <li><a href="#formacao">formação</a></li>
-            <li><a href="#experiencia">experiência</a></li>
-            <li><a href="#publicacoes">publicações</a></li>
-            <li><a href="#contato">contato</a></li>
-          </ul>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Leonardo Lima</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="containerHome">
+      <nav id="nav-placeholder" class="navHome"></nav>
+      <script>
+        $(function(){
+          $("#nav-placeholder").load("nav.html");
+        });
+      </script>
+      <div class="portfolio">
+        <!-- <div class="projeto">
+          <p class="tipoProj">MOTION DESIGN</p>
+          <a href="#"><img src="#" alt="Produção de vídeo 2 FAAL"></a>
         </div>
-      </nav>
-      <div class="assinatura">
-        <img src="img/lslima.png" alt="Leonardo Lima">
+        <div class="projeto">
+          <p class="tipoProj">IDENTIDADE VISUAL</p>
+          <a href="#"><img src="#" alt="REBEL 2019"></a>
+        </div> -->
+        <div class="projeto">
+          <p class="tipoProj">INSTALAÇÃO INTERATIVA</p>
+          <a href="projetos/projeto.html?id=circuitoAlameda.html"><img src="images/circuitoAlameda1.jpg" alt="Circuito Arte Alameda"></a>
+        </div>
+        <!-- <div class="projeto">
+          <p class="tipoProj">IDENTIDADE VISUAL</p>
+          <a href="#"><img src="#" alt="FAEL 2018"></a>
+        </div> -->
+        <div class="projeto">
+          <p class="tipoProj">AUDIOVISUAL INTERATIVO</p>
+          <a href="projetos/projeto.html?id=REM.html"><img src="images/REM.jpg" alt="REM"></a>
+        </div>
+        <!-- <div class="projeto">
+          <p class="tipoProj">IDENTIDADE VISUAL</p>
+          <img src="#" alt="FAEL 2017">
+        </div> -->
+        <div class="projeto">
+          <p class="tipoProj">INSTALAÇÃO INTERATIVA</p>
+          <a href="projetos/projeto.html?id=caixaChoques.html"><img src="images/mChoque1.jpg" alt="Caixa de Choques"></a>
+        </div>
+        <!-- <div class="projeto">
+          <p class="tipoProj">GAME DESIGN</p>
+          <a href="projetos/projeto.html?id=anima.html"><img src="#" alt="up up"></a>
+        </div> -->
+        <div class="projeto">
+          <p class="tipoProj">IDENTIDADE VISUAL</p>
+          <a href="projetos/projeto.html?id=topTec.html"><img src="images/toptec.jpg" alt=""></a>
+        </div>
+        <div class="projeto">
+          <p class="tipoProj">INSTALAÇÃO INTERATIVA</p>
+          <a href="projetos/projeto.html?id=caixaHorizontes.html"><img src="images/caixaHorizontes1.jpg" alt="Caixa dos horizontes possíveis"></a>
+        </div>
+        <div class="projeto">
+          <p class="tipoProj">INSTALAÇÃO INTERATIVA</p>
+          <a href="projetos/projeto.html?id=mirante50.html"><img src="images/mirante1.jpg" alt="Mirante 50"></a>
+        </div>
+        <!-- <div class="projeto">
+          <p class="tipoProj">AUDIOVISUAL INTERATIVO</p>
+          <img src="#" alt="-algo+alguém (2012)">
+        </div> -->
+        <div class="projeto">
+          <p class="tipoProj">MOTION DESIGN</p>
+          <a href="projetos/projeto.html?id=oceanoVivo.html"><img src="images/oceanoVivo.jpg" alt="Oceano Vivo"></a>
+        </div>
+        <div class="projeto">
+          <p class="tipoProj">MOTION DESIGN</p>
+          <a href="projetos/projeto.html?id=kotscho.html"><img src="images/kotscho.jpg" alt="Ricardo Kotscho"></a>
+        </div>
+        <div class="projeto">
+          <p class="tipoProj">MOTION DESIGN</p>
+          <a href="projetos/projeto.html?id=sentidosSP.html"><img src="images/saboresSP.jpg" alt="Sabores de São Paulo"></a>
+        </div>
+        <div class="projeto">
+          <p class="tipoProj">AUDIOVISUAL INTERATIVO</p>
+          <a href="projetos/projeto.html?id=aDeAnimal.html"><img src="images/A2.jpg" alt="A de Animal"></a>
+        </div>
+        <div class="projeto">
+          <p class="tipoProj">MOTION DESIGN</p>
+          <a href="projetos/projeto.html?id=melhorDoPan.html"><img src="images/melhorDoPan.jpg" alt="Melhor do Pan"></a>
+        </div>
+        <div class="projeto">
+          <p class="tipoProj">MOTION DESIGN</p>
+          <a href="projetos/projeto.html?id=jrNews.html"><img src="images/JRNews.jpg" alt="JR News"></a>
+        </div>
+        <div class="projeto">
+          <p class="tipoProj">MOTION DESIGN</p>
+          <a href="projetos/projeto.html?id=previsaoTempo.html"><img src="images/previsaoDoTempo.jpg" alt="Previsão do Tempo"></a>
+        </div>
+        <div class="projeto">
+          <p class="tipoProj">MOTION DESIGN</p>
+          <a href="projetos/projeto.html?id=idRecNews.html"><img src="images/idRecNews.jpg" alt="Institucional Record news"></a>
+        </div>
+        <div class="projeto">
+          <p class="tipoProj">MOTION DESIGN</p>
+          <a href="projetos/projeto.html?id=oVotoNaRecNews.html"><img src="images/oVotoNaRecNews.jpg" alt="O Voto na Record News 2010"></a>
+        </div>
+        <div class="projeto">
+          <p class="tipoProj">MOTION DESIGN</p>
+          <a href="projetos/projeto.html?id=recNewsRegionais.html"><img src="images/regionaisRecNews.jpg" alt="Jornais Regionais Record News"></a>
+        </div>
+        <div class="projeto">
+          <p class="tipoProj">MOTION DESIGN</p>
+          <a href="projetos/projeto.html?id=economiaNegócios.html"><img src="images/economiaNegócios.jpg" alt="Economia e Negócios"></a>
+        </div>
+        <div class="projeto">
+          <p class="tipoProj">MOTION DESIGN</p>
+          <a href="projetos/projeto.html?id=boletimOlimpico.html"><img src="images/boletimOlimpico.jpg" alt="Boletim Olímpico"></a>
+        </div>
+        <div class="projeto">
+          <p class="tipoProj">MOTION DESIGN</p>
+          <a href="projetos/projeto.html?id=pescaDinamica.html"><img src="images/pescaDinamica.jpg" alt="Pesca Dinâmica"></a>
+        </div>
+        <div class="projeto">
+          <p class="tipoProj">MOTION DESIGN</p>
+          <a href="projetos/projeto.html?id=grandChampions.html"><img src="images/grandChampionsBr.jpg" alt="Grand Champions Brasil"></a>
+        </div>
+        <div class="projeto">
+          <p class="tipoProj">MOTION DESIGN</p>
+          <a href="projetos/projeto.html?id=terraDaAlegria.html"><img src="images/terraDaAlegria.jpg" alt="Terra da Alegria"></a>
+        </div>
+        <div class="projeto">
+          <p class="tipoProj">MOTION DESIGN</p>
+          <a href="projetos/projeto.html?id=brasilOpen.html"><img src="images/brasilOpen2009.jpg" alt="Brasil Open 2009"></a>
+        </div>
+        <div class="projeto">
+          <p class="tipoProj">MOTION DESIGN</p>
+          <a href="projetos/projeto.html?id=sessaoEspecial.html"><img src="images/sessaoEspecial.jpg" alt="Sessão Especial"></a>
+        </div>
+        <div class="projeto">
+          <p class="tipoProj">MOTION DESIGN</p>
+          <a href="projetos/projeto.html?id=imagemDoDia.html"><img src="images/imagemDoDia.jpg" alt="Imagem do Dia"></a>
+        </div>
+        <div class="projeto">
+          <p class="tipoProj">MOTION DESIGN</p>
+          <a href="projetos/projeto.html?id=novosIdolos.html"><img src="images/novosIdolos.jpg" alt="Novos Ídolos"></a>
+        </div>
+        <div class="projeto">
+          <p class="tipoProj">MOTION DESIGN</p>
+          <a href="projetos/projeto.html?id=jogoHistorico.html"><img src="images/jogoHistorico.jpg" alt="Jogo Histórico"></a>
+        </div>
+        <div class="projeto">
+          <p class="tipoProj">MOTION DESIGN</p>
+          <a href="projetos/projeto.html?id=topCine.html"><img src="images/topCine.jpg" alt="Top Cine"></a>
+        </div>
+        <div class="projeto">
+          <p class="tipoProj">MOTION DESIGN</p>
+          <a href="projetos/projeto.html?id=especialCultura.html"><img src="images/especialCultura.jpg" alt="Especial Cultura"></a>
+        </div>
+        <div class="projeto">
+          <p class="tipoProj">MOTION DESIGN</p>
+          <a href="projetos/projeto.html?id=demoreel.html"><img src="images/demoReel.jpg" alt="Demo Reel 2007"></a>
+        </div>
+        <div class="projeto">
+          <p class="tipoProj">MOTION DESIGN</p>
+          <a href="projetos/projeto.html?id=anima.html"><img src="images/anima.jpg" alt="Anima"></a>
+        </div>
+        <div class="projeto">
+          <p class="tipoProj">AUDIOVISUAL INTERATIVO</p>
+          <a href="projetos/projeto.html?id=tsunami.html"><img src="images/semNome.jpg" alt="Tsunami ?"></a>
+        </div>
+        <div class="projeto">
+          <p class="tipoProj">MOTION DESIGN</p>
+          <a href="projetos/projeto.html?id=cup.html"><img src="images/cup.jpg" alt="Copy of Untitled Project"></a>
+        </div>
       </div>
-    </header>
-    <div class="wrapper">
-      <div class="secao" id="apresentacao">
-        <div class="nome_de_secao">
-          <h2>Leonardo Lima</h2>
-        </div>
-        <div class="conteudo_de_secao">
-          <p>Doutorando em Artes Visuais pela ECA/USP, meu trabalho atual se dedica às questões relativas à imersão em videogames e demais imagens digitais interativas. Em trabalhos anteriores conduzi pesquisas acerca da construção da subjetividade nos jogos eletrônicos, bem como a fuga à representação que esta mídia pode suscitar.</p>
-          <p>Como docente, ministrei aulas para Curso Superior Tecnológico em Jogos Digitais da FMU e participei da escrita de um livro orientado a estudantes secundaristas acerca da construção de personagens para videogames.</p>
-          <p>Como designer desenvolvo animações, videogames, websites e projetos de identidade visual.</p>
-        </div>
-      </div>
-      <div class="secao" id="audio-visual">
-        <div class="nome_de_secao">
-          <h2>Produção audio-visual e interativa</h2>
-        </div>
-        <div class="conteudo_de_secao">
-          <p><a href="https://www.scirra.com/arcade/action-games/up-up-11276" target="_blank">Up Up</a> (2016). Videogame.</p>
-          <p><a href="img/toptec.jpg" target="_blank">Top Tec</a> (2015). Identidade visual para a empresa Top Tec Borrachas.</p>
-          <p><a href="http://poeticasdigitais.net/POETICAS/caixa.html" target="_blank">Caixa dos horizontes possíveis</a> (2014). Instalação (com o Grupo Poéticas Digitais).</p>
-          <p><a href="http://poeticasdigitais.net/POETICAS/mirante-50.html" target="_blank">Mirante 50</a> (2014). Instalação (com o Grupo Poéticas Digitais).</p>
-          <p><a href="https://www.dropbox.com/sh/rhbmdojrtbulgsy/AAAI5UYaQ9VCqFlZ-NWElhrOa?dl=0" target="_blank">-algo+alguém</a> (2012). Videogame.</p>
-          <p><a href="https://vimeo.com/106214254" target="_blank">Oceano Vivo</a> (2012). Vinheta para programa de TV.</p>
-          <p><a href="https://vimeo.com/106201786" target="_blank">Ricardo Kotscho</a> (2012). Vinheta para programa de TV.</p>
-          <p><a href="https://vimeo.com/40270406" target="_blank">Sentidos de São Paulo</a> (2012). Vinheta para programa de TV.</p>
-          <p><a href="https://www.dropbox.com/sh/q0oesskqve1bm1o/AAD6MmFUXyH_GfkRnVyPi5qla?dl=0" target="_blank">A de Animal</a> (2011). Videogame.</p>
-          <p><a href="https://vimeo.com/40270405" target="_blank">Melhor do Pan</a> (2011). Vinheta para programa de TV.</p>
-          <p><a href="https://vimeo.com/26126118" target="_blank">JR News</a> (2011). Vinheta para programa de TV.</p>
-          <p><a href="https://vimeo.com/29456986" target="_blank">Previsão do Tempo Record News</a> (2011). Base animada para previsão de tempo.</p>
-          <p><a href="https://vimeo.com/16742034" target="_blank">ID Record News</a> (2010). Vinheta institucional para o canal de TV Record News.</p>
-          <p><a href="https://vimeo.com/16671097" target="_blank">O Voto na Record News 2010</a> (2010). Vinheta para programa de TV.</p>
-          <p><a href="https://vimeo.com/16670970" target="_blank">Record News Regionais</a> (2010). Vinheta para programa de TV.</p>
-          <p><a href="https://vimeo.com/16670822" target="_blank">Economia e Negócios</a> (2010). Vinheta para programa de TV.</p>
-          <p><a href="https://vimeo.com/16665738" target="_blank">Boletim Olímpico</a> (2010). Vinheta para programa de TV.</p>
-          <p><a href="https://vimeo.com/5282030" target="_blank">Pesca Dinâmica</a> (2009). Vinheta para programa de TV.</p>
-          <p><a href="https://vimeo.com/5069208" target="_blank">Grand Champions Brasil</a> (2009). Vinheta para programa de TV.</p>
-          <p><a href="https://vimeo.com/3695935" target="_blank">Terra da Alegria</a> (2009). Vinheta para programa de TV.</p>
-          <p><a href="https://vimeo.com/3217217" target="_blank">Brasil Open 2009</a> (2009). Vinheta para programa de TV.</p>
-          <p><a href="https://vimeo.com/3173286" target="_blank">Seção Especial</a> (2008). Vinheta para programa de TV.</p>
-          <p><a href="https://vimeo.com/3394189" target="_blank">Imagem do Dia</a> (2008). Vinheta para programa de TV.</p>
-          <p><a href="https://vimeo.com/3100403" target="_blank">NovosÍdolos</a> (2008). Vinheta para programa de TV.</p>
-          <p><a href="https://vimeo.com/3181537" target="_blank">Jogo Histórico</a> (2008). Vinheta para programa de TV.</p>
-          <p><a href="https://vimeo.com/3092700" target="_blank">Top Cine</a> (2008). Vinheta para programa de TV.</p>
-          <p><a href="https://vimeo.com/3092522" target="_blank">Especial Cultura</a> (2008). Vinheta para programa de TV.</p>
-          <p><a href="https://vimeo.com/2749517" target="_blank">História dos Bairros de São Paulo</a> (2008). Vinheta para programa de TV.</p>
-          <p><a href="https://vimeo.com/3102208" target="_blank">Reel 2007</a> (2007). Demo Reel com trabalhos de 2004 a 2007.</p>
-          <p><a href="https://vimeo.com/43416835" target="_blank">Anima</a> (2005). Animação curta-metragem.</p>
-        </div>
-      </div>
-      <div class="secao" id="formacao">
-        <div class="nome_de_secao">
-          <h2>Formação acadêmica</h2>
-        </div>
-        <div class="conteudo_de_secao">
-          <p class="ano">2014</p>
-          <h3>Doutorado em andamento em Artes Visuais.</h3>
-          <p>Universidade de São Paulo, USP.</p>
-          <p>Orientador: Gilbertto dos Santos Prado.</p>
 
-          <p class="ano">2009 - 2011</p>
-          <h3>Mestrado em Tecnologias da Inteligência e Design Digital.</h3>
-          <p>Pontifícia Universidade Católica de São Paulo, PUC-SP.</p>
-          <p>Título: <a href="https://www.academia.edu/14834930/A_produ%C3%A7%C3%A3o_de_subjetividade_nos_jogos_eletr%C3%B4nicos">A produção de subjetividade nos jogos eletrônicos.</a></p>
-          <p>Orientador: Luís Carlos Petry.</p>
-
-          <p class="ano">2001 - 2005</p>
-          <h3>Graduação em Desenho Industrial - Programação Visual.</h3>
-          <p>Universidade Estadual Paulista Júlio de Mesquita Filho, UNESP.</p>
-          <p>Título: <a href="https://www.academia.edu/14835072/Design_de_Rela%C3%A7%C3%B5es_e_a_Linguagem_dos_Jogos_Eletr%C3%B4nicos">O Design de Relações e a Linguagem dos Jogos Eletrônicos.</a></p>
-          <p>Orientador: Dorival Campos Rossi.</p>
-
-          <p class="ano">1997 - 2000</p>
-          <h3>Ensino médio e Curso técnico/profissionalizante. Técnico em Edificações.</h3>
-          <p>Centro Feferal de Educação Tecnológica de São Paulo, CEFET-SP</p>.
-
-        </div>
-      </div>
-      <div class="secao" id="experiencia">
-        <div class="nome_de_secao">
-          <h2>Experiência profissional</h2>
-        </div>
-        <div class="conteudo_de_secao">
-          <p class="ano">2012 - 2015</p>
-          <h3>Centro Universitário das Faculdades Metropolitanas Unidas, FMU.</h3>
-          <p>Professor da disciplina Ambientes Operacionais e Jogos em Processos de Treinamento no Curso Superior Tecnológico em Jogos Digitais.</p>
-
-          <p class="ano">2008 - 2014</p>
-          <h3>Rádio e Televisão Record S.A.</h3>
-          <p>Animador de Computação Gráfica.</p>
-
-          <p class="ano">2007 - 2007</p>
-          <h3>Faculdade de Administração e Arte de Limeira, FAAL.</h3>
-          <p>Professor no curso de Design (Bacharelado) na disciplina "Design de Games".</p>
-
-          <p class="ano">2006 - 2008</p>
-          <h3>Rádio e Televisão Bandeirantes Ltda., BAND.</h3>
-          <p>Editor de Videografia.</p>
-
-          <p class="ano">2006 - 2006</p>
-          <h3>Mercury Games.</h3>
-          <p>Desenvolvedor de Interfaces gráficas para jogos eletrônicos.</p>
-
-        </div>
-      </div>
-      <div class="secao" id="publicacoes">
-        <div class="nome_de_secao">
-          <h2>Publicações</h2>
-        </div>
-        <div class="conteudo_de_secao">
-          <p>GUIMARAES NETO, E. ; LIMA, Leonardo Souza de. <a href="http://www.buscape.com.br/narrativas-e-personagens-para-jogos-ernane-guimaraes-neto-8536507799" target="_blank">Narrativas e Personagens para Jogos.</a> 1ª. ed. São Paulo: Érica, 2014. v. 1. 152p .</p>
-
-          <p>CAVALEIRO, A. ; LIMA, Leonardo Souza de. <a href="https://www.academia.edu/29026823/Notgames_converg%C3%AAncias_entre_videogames_e_arte_interativa" target="_blank">Notgames: convergências entre videogames e arte interativa.</a> In: XIII Simpósio Brasileiro de Jogos e Entretenimento Digital, 2014, Porto Alegre. Proceedings do XIII Simpósio Brasileiro de Jogos e Entretenimento Digital, 2014.</p>
-
-          <p>LIMA, Leonardo Souza de.<a href="https://www.academia.edu/29026890/Games_e_criatividade_interfaces_entre_desenvolvedores_e_jogadores" target="_blank">Games e criatividade: interfaces entre desenvolvedores e jogadores.</a> In: XII Simpósio Brasileiro de Jogos e Entretenimento Digital (SBGames 2013), 2013, São Paulo. Proceedings do XII Simpósio Brasileiro de Jogos e Entretenimento Digital (SBGames 2013) - Trilha de Cultura, 2013.</p>
-
-          <p>LIMA, Leonardo Souza de.<a href="http://www.educacaografica.inf.br/artigos/plano-curvo-decompilacao-de-sentidos-e-significados" target="_blank">Plano curvo: decompilação de sentidos e significados.</a> Educação Gráfica (Bauru), Bauru, v. 7, p. 115-122, 2003.</p>
-
-        </div>
-      </div>
-      <footer>
-        <div class="secao" id="contato">
-          <div class="nome_de_secao">
-            <h2>Contato</h2>
-          </div>
-          <div class="conteudo_de_secao">
-            <p>Envie um email para <a href="mailto:lslima@live.com">lslima@live.com</a>.</p>
-            <p><a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4742032H2" target="_blank">Currículo na plataforma Lattes</a>.</p>
-            <div class="social-icons">
-              <a href="https://www.linkedin.com/in/lslima" target="_blank"><i class="fa fa-linkedin-square"></i></a>
-              <a href="https://vimeo.com/user1123219" target="_blank"><i class="fa fa-vimeo-square"></i></a>
-              <a href="https://www.facebook.com/lslima" target="_blank"><i class="fa fa-facebook-square"></i></a>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </div>
   </body>
-  </html>
+</html>

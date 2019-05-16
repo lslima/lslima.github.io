@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Oceano Vivo - Leonardo Lima</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript">
+      var url_string = window.location.href;
+      var url = new URL(url_string);
+      var proj = url.searchParams.get("id");
+      // console.log(proj);
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- navbar -->
+      <nav id="nav-placeholder"></nav>
+      <script>
+        $(function(){
+          $("#nav-placeholder").load("nav.html");
+        });
+      </script>
+      <!-- navbar -->
+      <main id="projeto-placeholder">
+      </main>
+      <script>
+      $(function(){
+        $("#projeto-placeholder").load(proj);
+      });
+      </script>
+    </div>
+  </body>
+</html>
