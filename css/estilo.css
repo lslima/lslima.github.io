@@ -150,6 +150,16 @@ main{
 .imgSingle img{
   width: 100%;
 }
+.miniBio h1{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 40px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
 h1{
   font-family: Roboto;
   font-style: normal;
@@ -309,6 +319,13 @@ a{
   .descProj{
     width: 100%;
     padding: 0 20px 0 20px;
+    box-sizing: border-box;
+  }
+  .imgSingle{
+    width: 100%;
+  }
+  .imgSingle img{
+    padding: 5px 10px 5px 10px;
     box-sizing: border-box;
   }
   h1{
