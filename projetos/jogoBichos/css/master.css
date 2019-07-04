@@ -1,0 +1,116 @@
+body{
+  font-family: 'Caveat Brush', cursive;
+  color: #5D1D08;
+  background: url('../images/bg.jpg');
+  margin: 0;
+}
+
+
+.container{
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background: url('../images/vinheta.png');
+  background-size: contain;
+}
+.jogo{
+  display: flex;
+  flex-basis: 50%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 5%;
+}
+.botao{
+  width: 42%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10%;
+  margin: 5px;
+  border: solid ;
+  border-color: #D2F10D;
+  border-width: 10px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+
+}
+.botao img{
+  width: 70%;
+}
+#btA{
+  background-image: radial-gradient(#FAE60D, #FFB905);
+  transition: 0.5s;
+}
+#btB{
+  background-image: radial-gradient(#E994DB, #AC0795);
+  transition: 0.5s;
+}
+#btC{
+  background-image: radial-gradient(#C4FF06 ,#8BB600);
+  transition: 0.5s;
+}
+#btD{
+  background-image: radial-gradient(#8BE0FB, #29478A);
+  transition: 0.5s;
+}
+.escolhido{
+  /* background-color: black; */
+  filter: brightness(1.75);
+}
+
+.notificar{
+  width: 85%;
+  padding: 20px;
+  border-radius: 20px;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, 300%);
+  background-image: radial-gradient(#F2FFC9, #D3E689);
+  border: 2px solid #5D1D08;
+  /* display: none; */
+  /* transform: scale(50%); */
+  transition: 1s;
+  z-index: 10;
+  text-align: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+.revelar{
+  /* display: block; */
+  transform: translate(-50%, -50%);
+}
+.box{
+  background: url(../images/box.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 80%;
+  margin: 0 10% 0 10%;
+  text-align: center;
+  font-size: 2rem;
+
+}
+.box p{
+  padding: 15px;
+}
+.boxTent{
+  position: absolute;
+  bottom: 0px;
+}
+.boxNivel{
+  position: absolute;
+  left: -50%;
+  text-align: right;
+}
+.boxNivel p{
+  margin-right: 10%;
+}
+h1{
+  font-size: 3rem;
+}
+p{
+  font-size: 2rem;
+}

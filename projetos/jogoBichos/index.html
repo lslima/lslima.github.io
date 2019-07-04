@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <title>Super Memória! Bichos</title>
+    <link rel="stylesheet" href="css/master.css">
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Caveat+Brush&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="box boxNivel">
+        <p id='nivel'>Nível x</p>
+      </div>
+      <div class="jogo">
+        <div class="botao" id="btA" onclick="botPress(1)">
+          <img src="images/galinha.svg" alt="">
+          <audio src="audio/galinha.wav" id="audioA"></audio>
+        </div>
+        <div class="botao" id="btB" onclick="botPress(2)">
+          <img src="images/macaco.svg" alt="">
+          <audio src="audio/macaco.wav" id="audioB"></audio>
+        </div>
+        <div class="botao" id="btC" onclick="botPress(3)">
+          <img src="images/porco.svg" alt="">
+          <audio src="audio/porco.wav" id="audioC"></audio>
+        </div>
+        <div class="botao" id="btD" onclick="botPress(4)">
+          <img src="images/sapo.svg" alt="">
+          <audio src="audio/sapo.wav" id="audioD"></audio>
+        </div>
+      </div>
+      <div class="box boxTent">
+        <p id="tentativas"> Faltam X tentativas</p>
+      </div>
+      <div class="notificar revelar" id="capa">
+        <h1>Super Memória!<br>Bichos</h1>
+        <p>Vamos para a próxima rodada!</p>
+        <div class="box" onclick="sortear()">
+          <p>Jogar</p>
+        </div>
+        <!-- <input type="button" name="" value="Iniciar" > -->
+      </div>
+      <div class="notificar" id="parabens">
+        <h1>Parabéns!!</h1>
+        <div class="box" onclick="sortear()">
+          <p>Próxima rodada!</p>
+        </div>
+
+      </div>
+      <div class="notificar" id="pena">
+        <h1>Que pena!!</h1>
+        <p id="mensagemNivel"></p>
+        <div class="box" onclick="sortear()">
+          <p>Quer começar de novo?</p>
+        </div>
+      </div>
+    </div>
+    <script src="js/jogo.js" charset="utf-8"></script>
+  </body>
+</html>
