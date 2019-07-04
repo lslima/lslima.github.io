@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <div class="containerHome">
+    <div class="containerHome transition-fade" id="swup">
       <nav id="nav-placeholder" class="navHome"></nav>
       <script>
         $(function(){
@@ -24,6 +24,10 @@
         <div class="projeto">
           <p class="tipoProj">IDENTIDADE VISUAL</p>
           <a href="projetos/projeto.html?id=posterRebel.html"><img src="images/bannerRebel.jpg" alt="REBEL 2019"></a>
+        </div>
+        <div class="projeto">
+          <p class="tipoProj">ILUSTRAÇÃO</p>
+          <a href="projetos/projeto.html?id=menino.html"><img src="images/menino.jpg" alt="Menino"></a>
         </div>
         <div class="projeto">
           <p class="tipoProj">INSTALAÇÃO INTERATIVA</p>
@@ -174,6 +178,9 @@
           <a href="projetos/projeto.html?id=cup.html"><img src="images/cup.jpg" alt="Copy of Untitled Project"></a>
         </div>
       </div>
-
+      <script src="js/dist/swup.js"></script>
+      <script>
+          const swup = new Swup();
+      </script>
   </body>
 </html>
