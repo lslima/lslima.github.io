@@ -30,7 +30,14 @@ function sortearV(){ //Sorteia as entradas e coloca na memória do jogo
   if (!turnoJogador) {
     var x = Math.floor((Math.random()*4)+1)
     memo.push(x)
-    retornoSelec(x)
+    for (var i = 0; i < memo.length; i++) {
+      (function(i){
+        setTimeout(function(){
+          retornoSelec(memo[i])
+        }, 1000*i)
+      })(i)
+    }
+     // retornoSelec(x)
     turnoJogador = true
 
     tentativas.innerHTML = `Faltam ${memo.length - memoJogador.length} tentativas.`
@@ -93,18 +100,26 @@ function retornoSelec(id){//retorno visual e sonoro da escolha
   switch (id) {
     case 1:
       piscarInicio(btA)
+      audioA.pause();
+      audioA.currentTime = 0;
       audioA.play()
       break;
     case 2:
       piscarInicio(btB)
+      audioB.pause();
+      audioB.currentTime = 0;
       audioB.play()
       break;
     case 3:
       piscarInicio(btC)
+      audioC.pause();
+      audioC.currentTime = 0;
       audioC.play()
       break;
     case 4:
       piscarInicio(btD)
+      audioD.pause();
+      audioD.currentTime = 0;
       audioD.play()
       break;
     default:
