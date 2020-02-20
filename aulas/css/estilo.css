@@ -1,0 +1,174 @@
+body{
+  margin: 0;
+  font-family: Roboto;
+}
+.containerHome{
+  position: relative;
+}
+.container{
+  position: relative;
+  display: flex;
+}
+nav{
+  position: fixed;
+  height: 100%;
+  width: 240px;
+  /* position: fixed; */
+  z-index: 1;
+  /* top: 0; */
+  /* left: 0; */
+  background: #FFF;
+}
+.navHome{
+  left: 0;
+  top: 0;
+}
+nav img{
+  margin-top: 48px;
+  width: 100%;
+}
+.navSobre{
+  text-align: center;
+  /* width: 10; */
+}
+.navSobre a{
+  text-decoration: none;
+  color: inherit;
+}
+.menuIcon{
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 0px;
+}
+.portfolio{
+  margin-left: 240px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.projeto{
+  width: 20%;
+  padding-bottom: 20%;
+  height: 0;
+  position: relative;
+  overflow: hidden;
+}
+.projeto img{
+  width:100%;
+  height:100%;
+  position: absolute;
+  object-fit:cover;
+  transition: 1s;
+}
+
+/* Página de projeto */
+main{
+  max-width: 960px;
+  margin: 48px;
+  padding: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  background: rgba(255, 255, 255, 0.5);
+}
+canvas{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+
+h1{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+h2{
+  margin-top: 80px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 16px;
+  color: #000000;
+}
+h3{
+  margin-top: 4px;
+  margin-bottom: 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+}
+.fichaTecnica p{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 16px;
+  }
+p{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+.descProj{
+  width: 50%;
+}
+.contato{
+  width: 128px;
+  position: absolute;
+  left: 56px;
+  bottom: 48px;
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5px;
+}
+.contato img {
+  height: 20px;
+  width: 20px;
+
+}
+a{
+  text-decoration: none;
+  color: #000;
+  font-style: italic;
+}
+/* Formatos sobre */
+.curriculo{
+  width: 50%;
+}
+.curriculo p{
+    margin-top: 0px;
+    margin-bottom: 4px;
+}
+.ano{
+  /* font-weight: bold; */
+  font-style: italic;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+.entradaCurriculo{
+  margin-top: 50px;
+}
+.miniBio{
+  width: 50%;
+  margin-top: 0px;
+}
+.miniBio p{
+  margin-top: 0px;
+}
+/* Transições de página */
+.transition-fade {
+  transition: .4s;
+  opacity: 1;
+}
+html.is-animating .transition-fade{
+  opacity: 0;
+}
