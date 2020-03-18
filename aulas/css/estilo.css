@@ -94,7 +94,7 @@ h2{
   line-height: 16px;
   color: #000000;
 }
-h3{
+h3, summary{
   margin-top: 4px;
   margin-bottom: 10px;
   font-family: Roboto;
